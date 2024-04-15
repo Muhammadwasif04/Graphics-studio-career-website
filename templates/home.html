@@ -4,55 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Graphics Studio Careers</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
     </head>
-    <style>
-        h1{
-            font-size: 40px;
-            font-family: roboto;
-            font-weight: normal;
-            color: #000000;
-            text-align: center; 
-        }
-        #banner{
-            widht: 100%;
-            Height: 360px;
-            object-fit: cover;
-            object-align: center;
-        }
-        h2{
-            font-size: 32px;
-            font-family: roboto;
-            font-weight: normal;
-            color: #000000;
-            text-align: center;
-        }
-        p1{
-            font-size: 23px;
-            font-family: roboto;
-            font-weight: normal;
-            color: #000000;
-            text-align: center; 
-        }
-        #Container {
-            max-width: 720px;
-            margin: 0 auto 0 auto;
-          }
-        p{
-            font-size: 32px;
-            font-family: roboto;
-            font-weight: normal;
-            color: #000000;
-            text-align: center;
-        }
-    </style>
     <body>
         <div id = 'Container'>
-            <h1> Graphics Studio Careers </h1>
-            <img id='banner' src = "static/download.jpg" 
-                width = '750' 
-                Height = '250'>
-            <h2> About us </h2>
-            <p1>
+            <h1 class = 'text-center'> Graphics Studio Careers </h1>
+            <img class="rounded mx-auto d-block" src = "static/download.jpg">
+            <h2 class='text-center'> About us </h2>
+            <p1 class = 'lead'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Cursus risus at ultrices mi tempus. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in. 
@@ -62,11 +23,14 @@
                 Eget felis eget nunc lobortis mattis aliquam. Sagittis orci a scelerisque purus semper eget duis at tellus. 
                 Eu tincidunt tortor aliquam nulla facilisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.
             </p1>
-            <h2> Open Positions </h2>
-            <p> Todo -- job details</p>
-            <div style = "text-align: center;">
-            <button>Contact Us</button>
+            <h2 class = 'text-center'> Open Positions </h2>
+            <p class='lead text-center'> Todo -- job details</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button">Contact Us</button>
             </div>
+            <footer class = 'text-center lead' >
+            &copy; <em id="date"></em>Graphics Studio
+            </footer>
         </div>
     </body>
 </html>

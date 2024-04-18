@@ -8,12 +8,16 @@
         rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
         crossorigin="anonymous">
     </head>
-    <body style="background-image: url('/static/background.jpg');">
+    <body>
         {% include 'nav.html' %}
+        <div> <img src = '/static/career.jpg'
+            style = 'height: 280px; width: 100%; object-fit:cover; margin-bottom:16px;'>
+        </div>
         <div class = 'container'>
             <h1 class = 'text-center'> Graphics Studio Careers </h1>
-            <img class="rounded mx-auto d-block" src = "static/download.jpg">
             <h2 class='text-center'> About us </h2>
+            <div class='row' style='margin-bottom:16px'>
+                <div class = 'col-md-6'>
             <p1 class = 'lead'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -24,7 +28,11 @@
                 Eget felis eget nunc lobortis mattis aliquam. Sagittis orci a scelerisque purus semper eget duis at tellus. 
                 Eu tincidunt tortor aliquam nulla facilisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.
             </p1>
-
+                </div>
+                <div class = 'd-none d-md-block col-md-6'>
+            <img src = '/static/people.jpg' style='height: 320px; border-radius: 4px'>
+                </div>   
+            </div>    
 
             <h2 class = 'text-center'> Open Positions </h2>
             <div>
@@ -33,10 +41,11 @@
                 {% endfor %}
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary" type="button">Contact Us</button>
+            <a href ="mailto:graphicsstudio@gmail.com"  
+            class="btn btn-primary" type="button">Contact Us</a>
             </div>
-            <footer class = 'text-center lead' >
-            &copy; <em id="date"></em> 2024 Graphics Studio
+            <footer>
+            {% include 'footer.html' %}
             </footer>
         </div>
     </body>
